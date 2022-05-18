@@ -1,0 +1,139 @@
+$logo-header: #231F20;  
+$text-default: #000000;
+$text-accent: #ffffff;
+$accent-orange: #F7941E;
+$accent-lightorange: #ffe6c8;
+$accent-darkorange: #fbac4c;
+$background-lightgrey: #F1F1F2;
+$background-post: #FAFAFA;
+$button-black: #000000;
+
+// #region Common
+
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 18px;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.section {
+  padding: 0;
+}
+
+.section__title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.section__subtitle {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.container--1440 {
+  width: 1440px;
+  padding: 0;
+}
+
+// #endregion
+
+// #region Button definitions
+
+.button {
+  margin: 0;
+  padding: 0 10px;
+  min-width: 200px;
+  min-height: 40px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  color: $text-accent;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-radius: 5px;
+  border: 1px solid $accent-orange;
+  background-color: $accent-orange;
+
+  transition: background-color 350ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-darkorange;
+  }
+}
+
+.button--light {
+  color: $accent-orange;
+  background-color: transparent;
+
+  transition: background-color 350ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-lightorange;
+  }  
+}
+
+.button--black {
+  border-color: $button-black;
+  color: $text-accent;
+  background-color: $button-black;
+
+  transition: background-color 350ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #222222;
+  }
+}
+
+.button--black-contrast {
+  border-color: $button-black;
+  color: $text-default;
+  background-color: transparent;
+
+  transition: background-color 350ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #EEEEEE;
+  }
+}
+
+// #endregion
+

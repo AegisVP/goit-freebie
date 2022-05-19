@@ -15,7 +15,8 @@ $button-black: #000000;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  // font-family: 'Poppins', sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 
 *::before,
@@ -41,7 +42,7 @@ ul {
 .section__title {
   margin: 0;
 
-  font-weight: 400;
+  font-weight: normal;
   font-size: 32px;
   line-height: 1.4;
   text-align: center;

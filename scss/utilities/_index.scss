@@ -77,7 +77,7 @@
 }
 
 .hero__title {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 56px;
   line-height: 84px;
 }
@@ -252,7 +252,7 @@
 
 .cta__title {
   @extend .cta__text;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .cta__buttons {
@@ -339,7 +339,7 @@ transition: box-shadow 350ms linear;
 
 .blog__title {
   margin: 0;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 24px;
   line-height: 34px;
 }
@@ -391,11 +391,21 @@ transition: box-shadow 350ms linear;
 }
 
 .footer-nav__link {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 14px;
   line-height: 20px;
   color: $text-default;
   text-decoration: none;
+
+  transition: 
+    color 150ms linear,
+    transform 150ms linear;
+
+  &:focus-within,
+  &:hover {
+    color: $accent-darkorange;
+    transform: scale(1.1);
+  }
 }
 
 .footer-nav__link > .logo {
@@ -414,14 +424,23 @@ transition: box-shadow 350ms linear;
   width: 40px;
   height: 40px;
   margin: 0 12px 0;
-  fill: $text-default;
+}
 
-  transition: fill 150ms linear;
-  
+.social__link {
+  display: block;
+  text-decoration: none;
+  color: $text-default;
+
+  transition: color 150ms linear;
+
   &:focus-within,
   &:hover {
-    fill: $accent-darkorange;
+    color: $accent-darkorange;
   }
+}
+
+.social__icon {
+  fill: currentColor;
 }
 
 .footer__service {
